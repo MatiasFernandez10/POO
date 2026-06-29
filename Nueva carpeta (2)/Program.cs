@@ -252,6 +252,7 @@ public class CuentaBancaria : Persona
         {
             throw new NoRetiroSuccessException("No podes retirar mas de lo que ya tenes");
         }
+        saldo -= monto;
     }
     
     public void TransferirA(CuentaBancaria cliente, decimal transaccion)
