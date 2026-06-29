@@ -66,7 +66,6 @@ public abstract class Persona
 
 public abstract class Institucion
 {
-    protected int CapacidadMaxima;
     private string nombre;
     public string Nombre
     {
@@ -134,10 +133,6 @@ public class Banco : Institucion
     public override void PresentarInstitucion()
     {
         Console.WriteLine($"el banco se llama"+Nombre+"y esta ubicado en"+Direccion);
-    }
-    public void AgregarCuneta(CuentaBancaria cuenta)
-    {
-        
     }
  }
 
